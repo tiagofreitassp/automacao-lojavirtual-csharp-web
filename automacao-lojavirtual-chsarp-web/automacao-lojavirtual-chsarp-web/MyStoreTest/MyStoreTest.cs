@@ -1,0 +1,39 @@
+﻿using System;
+using automacao_lojavirtual_chsarp_web.MyStorePageObject;
+using automacao_lojavirtual_chsarp_web_MyStoreWebDriver;
+using NUnit.Framework;
+
+namespace automacao_lojavirtual_chsarp_web_MyStoreTest
+{
+    public class MyStoreTest : MyStoreWebDriver
+    {
+        public String chrome = "chrome";
+        public String firefox = "firefox";
+        public String ie = "ie";
+        public String edge = "edge";
+        public String safari = "safari";
+
+        private MyStorePage myStorePage;
+
+        [SetUp]
+        public void Setup()
+        {
+            CriarDriverWeb(chrome);
+        }
+
+        [Test]
+        public void TestRealizarCompra()
+        {
+            myStorePage = new MyStorePage(driver);
+            myStorePage.Autenticacao("teste.email.1@mail.com", "abc@12345");
+            myStorePage.RealizarCompra();
+            myStorePage.Deslogar();
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            FecharDriverWeb();
+        }
+    }
+}
