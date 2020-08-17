@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{78013729-DDA2-44B2-8281-ECDF881D1EFF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorEvidencias.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="automacao-lojavirtual-csharp-web/MyStoreTest/MyStoreTest.cs">
     <Files>
-      <File FileName="automacao-lojavirtual-csharp-web/MyStoreTest/MyStoreTest.cs" Line="5" Column="1" />
-      <File FileName="automacao-lojavirtual-csharp-web/MyStorePageObject/MyStorePage.cs" Line="9" Column="1" />
-      <File FileName="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorEvidencias.cs" Line="22" Column="1" />
+      <File FileName="automacao-lojavirtual-csharp-web/MyStoreTest/MyStoreTest.cs" Line="7" Column="2" />
+      <File FileName="automacao-lojavirtual-csharp-web/MyStorePageObject/MyStorePage.cs" Line="33" Column="19" />
+      <File FileName="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorEvidencias.cs" Line="7" Column="1" />
+      <File FileName="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorPDF.cs" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,10 +12,10 @@
           <Node name="automacao-lojavirtual-csharp-web" expanded="True">
             <Node name="automacao-lojavirtual-csharp-web" expanded="True">
               <Node name="MyStorePageObject" expanded="True" />
-              <Node name="MyStoreTest" expanded="True" />
-              <Node name="MyStoreUtils" expanded="True">
-                <Node name="MyStoreGeradorEvidencias.cs" selected="True" />
+              <Node name="MyStoreTest" expanded="True">
+                <Node name="MyStoreTest.cs" selected="True" />
               </Node>
+              <Node name="MyStoreUtils" expanded="True" />
               <Node name="MyStoreVariabels" expanded="True" />
               <Node name="MyStoreWebDriver" expanded="True" />
             </Node>
@@ -32,7 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.automacao-lojavirtual-csharp-web PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

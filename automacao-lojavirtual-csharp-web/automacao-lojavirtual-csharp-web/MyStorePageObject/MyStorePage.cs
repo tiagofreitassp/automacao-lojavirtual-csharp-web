@@ -30,7 +30,7 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
         {
             try
             {
-                myStoreGeradorPDF.CriarDocumentoEmPDF();
+                //myStoreGeradorPDF.CriarDocumentoEmPDF();
                 myStoreGeradorEvidencias.CriarPastaEvidencia("Evidencias MyStore_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
 
                 myStoreUtils.Clicar(myStoreVariables.LblSignIn);

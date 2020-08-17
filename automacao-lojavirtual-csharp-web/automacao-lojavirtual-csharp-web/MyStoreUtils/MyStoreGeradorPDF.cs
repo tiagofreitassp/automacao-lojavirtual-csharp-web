@@ -1,19 +1,19 @@
 ﻿using System;
-using OpenQA.Selenium.Remote;
 using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
 
 namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
 {
     public class MyStoreGeradorPDF : MyStoreWebDriver
     {
-        public MyStoreGeradorPDF()
-        {
-        }
-
         public void CriarDocumentoEmPDF()
         {
-            // Must have write permissions to the path folder
-            //PdfWriter writer = new PdfWriter("/Users/tiago.freitas/Downloads/demo.pdf");
+            string nomeDoUsuario = Environment.UserName;
+            string downloadsMac = "/Users/" + nomeDoUsuario + "/Downloads/";
+            string downloadsWindows = "C:/Users/" + nomeDoUsuario + "/Downloads/";
+            string downloads = downloadsMac;
+
+            //// Must have write permissions to the path folder
+            //PdfWriter writer = new PdfWriter(downloads + "/demo.pdf");
             //PdfDocument pdf = new PdfDocument(writer);
             //Document document = new Document(pdf);
             //Paragraph header = new Paragraph("HEADER")
