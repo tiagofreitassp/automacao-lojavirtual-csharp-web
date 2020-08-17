@@ -6,17 +6,18 @@ Script para realizar uma compra em uma loja online usando C Sharp, Selenium e NU
 * Realizar compra online
 
 ## Tecnologias:
-* [C Sharp](https://www.google.com/?client=safari&channel=mac_bm.br)
-* [NUnit](https://www.google.com/?client=safari&channel=mac_bm.br)
-* [Selenium](https://www.google.com/?client=safari&channel=mac_bm.br)
-* [Visual Studio 2019](https://www.google.com/?client=safari&channel=mac_bm.br)
+* [C Sharp](https://docs.microsoft.com/pt-br/dotnet/csharp/)
+* [NUnit](https://nunit.org)
+* [Selenium](https://www.selenium.dev)
+* [Visual Studio 2019](https://visualstudio.microsoft.com/pt-br/vs/)
+* [Marketplace Visual Studio](https://marketplace.visualstudio.com)
 
 ## Dependências:
 * NUnit
 * NUnit3TestAdapter 
 * Selenium.Support
 * Selenium.WebDriver 
-* Selenium.WebDriver.Chrome
+* Selenium.WebDriver.Chrome (Por padrao deixei o Chrome, mas pode baixar os outros plugins dos navegadores)
 
 ## Instruções de execução:
 
