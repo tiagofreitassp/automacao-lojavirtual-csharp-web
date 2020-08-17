@@ -7,7 +7,7 @@ using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Safari;
 
-namespace automacao_lojavirtual_chsarp_web_MyStoreWebDriver
+namespace automacao_lojavirtual_csharp_web_MyStoreWebDriver
 {
     public class MyStoreWebDriver
     {

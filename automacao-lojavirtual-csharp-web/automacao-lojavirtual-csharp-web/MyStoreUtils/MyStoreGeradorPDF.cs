@@ -1,8 +1,8 @@
 ﻿using System;
 using OpenQA.Selenium.Remote;
-using automacao_lojavirtual_chsarp_web_MyStoreWebDriver;
+using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
 
-namespace automacao_lojavirtual_chsarp_web_MyStoreUtils_MyStoreGeradorPDF
+namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
 {
     public class MyStoreGeradorPDF : MyStoreWebDriver
     {

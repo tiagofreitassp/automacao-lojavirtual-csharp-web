@@ -1,6 +1,6 @@
 ﻿using System;
-using automacao_lojavirtual_chsarp_web.MyStorePageObject;
-using automacao_lojavirtual_chsarp_web_MyStoreWebDriver;
+using automacao_lojavirtual_csharp_web_MyStorePageObject;
+using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
 using NUnit.Framework;
 
 namespace automacao_lojavirtual_chsarp_web_MyStoreTest

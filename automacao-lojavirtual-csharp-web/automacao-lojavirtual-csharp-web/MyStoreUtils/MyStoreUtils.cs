@@ -5,9 +5,9 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
 using SeleniumExtras.WaitHelpers;
-using automacao_lojavirtual_chsarp_web_MyStoreWebDriver;
+using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
 
-namespace automacao_lojavirtual_chsarp_web_MyStoreUtils
+namespace automacao_lojavirtual_csharp_web_MyStoreUtils
 {
     public class MyStoreUtils : MyStoreWebDriver
     {

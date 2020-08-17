@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Threading;
 using OpenQA.Selenium.Remote;
-using automacao_lojavirtual_chsarp_web_MyStoreWebDriver;
-using automacao_lojavirtual_chsarp_web_MyStoreUtils_MyStoreGeradorEvidencias;
-using automacao_lojavirtual_chsarp_web_MyStoreVariabels;
-using automacao_lojavirtual_chsarp_web_MyStoreUtils;
-using automacao_lojavirtual_chsarp_web_MyStoreUtils_MyStoreGeradorPDF;
+using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
+using automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorEvidencias;
+using automacao_lojavirtual_csharp_web_MyStoreVariabels;
+using automacao_lojavirtual_csharp_web_MyStoreUtils;
+using automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF;
 
-namespace automacao_lojavirtual_chsarp_web.MyStorePageObject
+namespace automacao_lojavirtual_csharp_web_MyStorePageObject
 {
     public class MyStorePage : MyStoreWebDriver
     {

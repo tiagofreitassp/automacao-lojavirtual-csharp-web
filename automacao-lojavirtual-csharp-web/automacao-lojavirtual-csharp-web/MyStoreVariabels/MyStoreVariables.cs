@@ -1,9 +1,9 @@
 ﻿using System;
-using automacao_lojavirtual_chsarp_web_MyStoreWebDriver;
+using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace automacao_lojavirtual_chsarp_web_MyStoreVariabels
+namespace automacao_lojavirtual_csharp_web_MyStoreVariabels
 {
     public class MyStoreVariables : MyStoreWebDriver
     {
