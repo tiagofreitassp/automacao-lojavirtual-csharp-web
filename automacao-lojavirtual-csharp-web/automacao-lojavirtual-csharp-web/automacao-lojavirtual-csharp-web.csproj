@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>automacao_lojavirtual_chsarp_web</RootNamespace>
+    <RootNamespace>automacao_lojavirtual_csharp_web</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -11,17 +11,10 @@
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Selenium.Support" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="84.0.4147.3001" />
-    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="MyStorePageObject\" />
-    <Folder Include="MyStoreTest\" />
-    <Folder Include="MyStoreUtils\" />
-    <Folder Include="MyStoreVariabels\" />
-    <Folder Include="MyStoreWebDriver\" />
-  </ItemGroup>
 </Project>

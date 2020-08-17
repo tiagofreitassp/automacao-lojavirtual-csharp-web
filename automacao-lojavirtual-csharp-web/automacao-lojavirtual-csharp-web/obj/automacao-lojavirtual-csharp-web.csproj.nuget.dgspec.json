@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web.csproj": {}
+    "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj": {}
   },
   "projects": {
-    "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web.csproj": {
+    "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web.csproj",
-        "projectName": "automacao-lojavirtual-chsarp-web",
-        "projectPath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web.csproj",
+        "projectUniqueName": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj",
+        "projectName": "automacao-lojavirtual-csharp-web",
+        "projectPath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj",
         "packagesPath": "/Users/tiago.freitas/.nuget/packages/",
-        "outputPath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/obj/",
+        "outputPath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tiago.freitas/.config/NuGet/NuGet.Config"

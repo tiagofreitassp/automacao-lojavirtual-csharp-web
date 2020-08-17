@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XXMwK/3HlFGjfhhqwQYZl7qmPOqfzo306FRjjIZVFDQiN/tXaNrh1eOxPQ4sd7X1hKCf5HJdTqAdiKB4W81VAQ==",
+  "dgSpecHash": "bQFTJC43nPpLf7fCVLTYtEbVcywKfnic98ISlI7vRRu6ZRk/4KcNPNlRfgvotDk7jiws4qQH1XiksdA3a9AOOg==",
   "success": true,
-  "projectFilePath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web.csproj",
+  "projectFilePath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj",
   "expectedPackageFiles": [
     "/Users/tiago.freitas/.nuget/packages/dotnetseleniumextras.waithelpers/3.11.0/dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.codecoverage/16.7.0/microsoft.codecoverage.16.7.0.nupkg.sha512",

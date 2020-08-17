@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "automacao-lojavirtual-csharp-web", "automacao-lojavirtual-csharp-web\automacao-lojavirtual-csharp-web.csproj", "{78013729-DDA2-44B2-8281-ECDF881D1EFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78013729-DDA2-44B2-8281-ECDF881D1EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78013729-DDA2-44B2-8281-ECDF881D1EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78013729-DDA2-44B2-8281-ECDF881D1EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78013729-DDA2-44B2-8281-ECDF881D1EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

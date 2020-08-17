@@ -22,8 +22,8 @@ namespace automacao_lojavirtual_chsarp_web_MyStoreUtils_MyStoreGeradorEvidencias
 
 		public void CriarPastaEvidencia(string nomeDaPastaEvidencia)
 		{
-			pastaEvidenciasMac = "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/Evidencias" + nomeDaPastaEvidencia;
-			pastaEvidenciasWindows = "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-chsarp-web/automacao-lojavirtual-chsarp-web/Evidencias" + nomeDaPastaEvidencia;
+			pastaEvidenciasMac = "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/Evidencias" + nomeDaPastaEvidencia;
+			pastaEvidenciasWindows = "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/Evidencias" + nomeDaPastaEvidencia;
 
 			var nomeDoSO = Environment.OSVersion.Platform;
 			//var nomeDaMaquina = Environment.MachineName;
