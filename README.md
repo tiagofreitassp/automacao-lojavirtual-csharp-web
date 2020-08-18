@@ -31,10 +31,12 @@ Script para realizar uma compra em uma loja online usando C Sharp, Selenium e NU
 
 ###  - Massas
 *Descricao: Antes de executar va na classe MyStoreTest/MyStoreTest.cs e verifique se a massa que ja esta la esta funcionando no site, pois o adm do MyStore apaga os emails criados depois de 90 dias.
+
 *Importante: Voce pode criar um cenario para criar login no MyStore, entenda como uma licao de casa para aprender a automacao usando C#.
 
 ###  - Evidencias
 *Importante: As evidencias estao sendo salvas na pasta do Downloads do Mac ou Windows.
+
 *Descricao: E criado uma pasta com as imagens e logo apos elas sao inseridas em um documento do Word ou gerado PDF (Esta etapa esta ocorrendo alguns erros na execucao devido problema entre versoes recentes do VS 2019 for Mac,
 caso voce perceba que o metodo que cria o documento do Word ou PDF estiverem ausentes, e por causa do problema nao ter sido resolvido, mas a criacao da pasta e insercao das imagens estao sem problemas). 
 
