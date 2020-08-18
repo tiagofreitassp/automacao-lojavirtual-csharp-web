@@ -43,7 +43,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
 
             // Add image
             Image img = new Image(ImageDataFactory
-               .Create("/Users/"+ nomeDoUsuario + "/Downloads/Csharp.png"))
+               .Create("/Users/" + nomeDoUsuario + "/Downloads/Csharp.png"))
                 .SetMarginLeft(100)
                 .SetMinHeight(300)
                 .SetMaxHeight(350)

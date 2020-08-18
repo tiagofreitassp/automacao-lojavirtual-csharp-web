@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{78013729-DDA2-44B2-8281-ECDF881D1EFF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="automacao-lojavirtual-csharp-web/MyStoreTest/MyStoreTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorPDF.cs">
     <Files>
       <File FileName="automacao-lojavirtual-csharp-web/MyStoreTest/MyStoreTest.cs" Line="39" Column="31" />
-      <File FileName="automacao-lojavirtual-csharp-web/MyStorePageObject/MyStorePage.cs" Line="9" Column="1" />
-      <File FileName="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorEvidencias.cs" Line="7" Column="1" />
-      <File FileName="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorPDF.cs" Line="11" Column="1" />
+      <File FileName="automacao-lojavirtual-csharp-web/MyStorePageObject/MyStorePage.cs" />
+      <File FileName="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorEvidencias.cs" />
+      <File FileName="automacao-lojavirtual-csharp-web/MyStoreUtils/MyStoreGeradorPDF.cs" Line="54" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,18 +12,11 @@
           <Node name="automacao-lojavirtual-csharp-web" expanded="True">
             <Node name="automacao-lojavirtual-csharp-web" expanded="True">
               <Node name="MyStorePageObject" expanded="True" />
-              <Node name="MyStoreTest" expanded="True">
-                <Node name="MyStoreTest.cs" selected="True" />
+              <Node name="MyStoreTest" expanded="True" />
+              <Node name="MyStoreUtils" expanded="True">
+                <Node name="MyStoreGeradorPDF.cs" selected="True" />
               </Node>
-              <Node name="MyStoreUtils" expanded="True" />
             </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="automacao-lojavirtual-csharp-web" expanded="True">
-            <Node name="automacao-lojavirtual-csharp-web" selected="True" />
           </Node>
         </State>
       </Pad>
