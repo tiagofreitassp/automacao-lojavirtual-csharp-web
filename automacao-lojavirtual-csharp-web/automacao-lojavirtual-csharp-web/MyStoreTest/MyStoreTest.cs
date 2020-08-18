@@ -1,6 +1,7 @@
 ﻿using System;
 using automacao_lojavirtual_csharp_web_MyStorePageObject;
 using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
+using automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF;
 using NUnit.Framework;
 
 namespace automacao_lojavirtual_chsarp_web_MyStoreTest
@@ -14,6 +15,7 @@ namespace automacao_lojavirtual_chsarp_web_MyStoreTest
         public String safari = "safari";
 
         private MyStorePage myStorePage;
+        private MyStoreGeradorPDF myStoreGeradorPDF;
 
         [SetUp]
         public void Setup()
@@ -33,7 +35,9 @@ namespace automacao_lojavirtual_chsarp_web_MyStoreTest
         [TearDown]
         public void TearDown()
         {
+            myStoreGeradorPDF = new MyStoreGeradorPDF();
             FecharDriverWeb();
+            myStoreGeradorPDF.CriarDocumentoDeEvidenciasEmPDF();
         }
     }
 }

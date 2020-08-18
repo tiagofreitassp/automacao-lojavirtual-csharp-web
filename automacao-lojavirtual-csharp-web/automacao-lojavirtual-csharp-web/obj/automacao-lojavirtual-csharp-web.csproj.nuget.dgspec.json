@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[84.0.4147.3001, )"
             },
+            "itext7": {
+              "target": "Package",
+              "version": "[7.1.9, )"
+            },
             "nunit": {
               "target": "Package",
               "version": "[3.12.0, )"
