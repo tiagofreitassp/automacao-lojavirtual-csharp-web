@@ -166,5 +166,12 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils
             Console.WriteLine("The current date and time: {0:MM-dd-yy H-mm-ss zzz}", dataEntrada);
             return dataEntrada;
         }
+
+        public string GerarDataHoraFormatada()
+        {
+            string sDataHoraAtual = System.DateTime.Now.ToString("ddMMyyyy_HHmmss");
+            Console.WriteLine("Data e Hora formatada: " + sDataHoraAtual);
+            return sDataHoraAtual;
+        }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
+using System.Net;
 using automacao_lojavirtual_csharp_web_MyStoreWebDriver;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
@@ -16,6 +18,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
 
         public RemoteWebDriver _driver;
         public Document document;
+        public DirectoryInfo evidencias;
         public int contador;
         public string cenario;
         public string arqEvidencia;
@@ -23,13 +26,13 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
         public static string nomeDoUsuario = Environment.UserName;
         public static string downloadsMac = "/Users/" + nomeDoUsuario + "/Downloads/";
         public static string downloadsWindows = "C:/Users/" + nomeDoUsuario + "/Downloads/";
-        public static string downloads = downloadsMac + "Evidencias MyStore WebSite";
 
         public MyStoreGeradorPDF(RemoteWebDriver driver, string nomeTeste)
         {
             _driver = driver;
             document = new Document();
             contador = 0;
+            CriarPastaEvidenciaNoPDF(nomeTeste);
             gerar(nomeTeste);
             addExternalImage();
             addFormatedText("Cenário: "+nomeTeste, FontFactory.HELVETICA, 20, Font.BOLDITALIC,
@@ -38,16 +41,22 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
             document.NewPage();
         }
 
-        public string PegarDataHoraFormatada()
-        {
-            string sDataHoraAtual = System.DateTime.Now.ToString("ddMMyyyy_HHmmss");
-            Console.WriteLine("Data e Hora formatada: " + sDataHoraAtual);
-            return sDataHoraAtual;
-        }
-
         public void gerar(string nomeTeste)
         {
-            arqEvidencia = downloads+"/"+nomeTeste+".pdf";
+            var nomeDoSO = Environment.OSVersion.Platform;
+            Console.WriteLine("Sistema Operacional: " + nomeDoSO);
+
+            string so = nomeDoSO.ToString();
+
+            if (so == "Unix" || so == "Mac")
+            {
+                arqEvidencia = downloadsMac + "/" + nomeTeste + ".pdf";
+            }
+            else if (so == "Windows")
+            {
+                arqEvidencia = downloadsWindows + "/" + nomeTeste + ".pdf";
+            }
+
             PdfWriter.GetInstance(document, new FileStream(arqEvidencia, FileMode.Create));
             document.Open();
             document.Open();
@@ -56,7 +65,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
         public void addExternalImage()
         {
             Image image = Image.GetInstance("/Users/" + nomeDoUsuario + "/Downloads/Csharp.png");
-            image.ScaleToFit(320f, 320f);
+            image.ScaleToFit(300f, 300f);
             image.Alignment = Element.ALIGN_CENTER;
             document.Add(image);
         }
@@ -139,18 +148,22 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
 
         public void textoInicial()
         {
-            addText("Data atual: ");
-            addText("Hora atual: ");
-            addText("Endereço IP: ");
-            addText("Usuário Atual ou de rede: ");
-            addText("Nome do computador de execução: ");
+            var nomeDoUsuario = Environment.UserName;
+            var nomeDoSO = Environment.OSVersion.Platform;
+            var nomeDaMaquina = Environment.MachineName;
+
+            addText("Data atual: "+PegarDataFormatada());
+            addText("Hora atual: "+PegarHoraFormatada());
+            addText("Endereço IP: "+"000.000.0.0");
+            addText("Usuário Atual ou de Rede: "+nomeDoUsuario);
+            addText("Nome do computador de execução: "+nomeDaMaquina);
             document.NewPage();
         }
 
         public void finishPdf()
         {
             BaseColor cor = BaseColor.GREEN;
-            String resultado = "Executado";
+            String resultado = "Evidencias MyStore_"+PegarDataHoraFormatada();
             String novoNome = "Evidencia com novo nome";
             //if (cenario.getStatus().toString().equals("FAILED"))
             //{
@@ -171,6 +184,66 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
         public void evidenciaElemento()
         {
             print("Passos");
+        }
+
+        public void CriarPastaEvidenciaNoPDF(string nomeDaPastaEvidencia)
+        {
+            try
+            {
+                var nomeDoUsuario = Environment.UserName;
+                Console.WriteLine("Nome do usuario: " + nomeDoUsuario);
+
+                var nomeDoSO = Environment.OSVersion.Platform;
+                Console.WriteLine("Sistema Operacional: " + nomeDoSO);
+
+                string so = nomeDoSO.ToString();
+
+                if (so == "Unix" || so == "Mac")
+                {
+                    //Verifica se pasta ja existe
+                    if (!Directory.Exists(downloadsMac))
+                    {
+                        //Criar pasta
+                        evidencias = Directory.CreateDirectory(downloadsMac + "/" + nomeDaPastaEvidencia);
+                        Console.WriteLine("Diretorio criado: " + evidencias);
+                    }
+                }
+                else if (so == "Windows")
+                {
+                    //Verifica se pasta ja existe
+                    if (!Directory.Exists(downloadsWindows))
+                    {
+                        //Criar pasta
+                        evidencias = Directory.CreateDirectory(downloadsWindows + "/" + nomeDaPastaEvidencia);
+                    }
+                }
+                Thread.Sleep(2);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Erro lancado no metodo CriarPastaEvidenciaNoPDF(): " + e.Message);
+            }
+        }
+
+        public string PegarDataHoraFormatada()
+        {
+            string sDataHoraAtual = System.DateTime.Now.ToString("ddMMyyyy_HHmmss");
+            Console.WriteLine("Data e Hora formatada: " + sDataHoraAtual);
+            return sDataHoraAtual;
+        }
+
+        public string PegarDataFormatada()
+        {
+            string sDataAtual = System.DateTime.Now.ToString("MM-dd-yy");
+            Console.WriteLine("Data e Hora formatada: " + sDataAtual);
+            return sDataAtual;
+        }
+
+        public string PegarHoraFormatada()
+        {
+            string sHoraAtual = System.DateTime.Now.ToString("H-mm-ss");
+            Console.WriteLine("Data e Hora formatada: " + sHoraAtual);
+            return sHoraAtual;
         }
     }
 }
