@@ -1,5 +1,5 @@
 # automacao-lojavirtual-csharp-web
-Script para realizar uma compra em uma loja online usando C Sharp, Selenium e NUnit
+Script para realizar uma compra em uma loja online usando C Sharp, Selenium, iText e NUnit. Criado no Visual Studio 2019.
 
 ### Cobertura dos testes:  ###
 
@@ -11,6 +11,7 @@ Script para realizar uma compra em uma loja online usando C Sharp, Selenium e NU
 * [Selenium](https://www.selenium.dev)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/pt-br/vs/)
 * [Marketplace Visual Studio](https://marketplace.visualstudio.com)
+* [iText](https://itextpdf.com/en)
 
 ## Dependências:
 * NUnit
@@ -18,7 +19,7 @@ Script para realizar uma compra em uma loja online usando C Sharp, Selenium e NU
 * Selenium.Support
 * Selenium.WebDriver 
 * Selenium.WebDriver.Chrome (Por padrao deixei o Chrome, mas pode baixar os outros plugins dos navegadores)
-* Itext (Para criar evidencias em pdf)
+* iTextSharp (Para criar evidencias em pdf)
 * Docx (Para criar evidencias em docx)
 
 ## Instruções de execução:
@@ -37,8 +38,7 @@ Script para realizar uma compra em uma loja online usando C Sharp, Selenium e NU
 ###  - Evidencias
 *Importante: As evidencias estao sendo salvas na pasta do Downloads do Mac ou Windows.
 
-*Descricao: E criado uma pasta com as imagens e logo apos elas sao inseridas em um documento do Word ou gerado PDF (Esta etapa esta ocorrendo alguns erros na execucao devido problema entre versoes recentes do VS 2019 for Mac,
-caso voce perceba que o metodo que cria o documento do Word ou PDF estiverem ausentes, e por causa do problema nao ter sido resolvido, mas a criacao da pasta e insercao das imagens estao sem problemas). 
+*Descricao: Ha duas classes em MyStoreUtils para gerar evidencias. A classe MyStoreGeradorEvidencias.cs cria uma pasta em Downloads do Mac ou Windows e insere as imagens, para adicionar as imagens em um documento tipo docx, recomendo usar o DocX, nao coloquei no projeto pois em pdf achei mais em conta devido a rapidez na execucao. A outra classe MyStoreGeradorPDF.cs tira os screenshots e adiciona-os dentro de um documento em pdf e tambem salva-o dentro de Downloads do Mac ou Windows.
 
 ###  - Inicializar a automação
 *Descricao: Para executar, abra a classe MyStoreTest/MyStoreTest.cs insira a massa com o email e senha correto. A execucao nao chega a 30 segundos caso nao haja lentidao com a conexao da sua internet. 
