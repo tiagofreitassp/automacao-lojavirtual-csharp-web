@@ -27,7 +27,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
         public static string downloadsMac = "/Users/" + nomeDoUsuario + "/Downloads/";
         public static string downloadsWindows = "C:/Users/" + nomeDoUsuario + "/Downloads/";
 
-        public MyStoreGeradorPDF(RemoteWebDriver driver, string nomeTeste)
+        public MyStoreGeradorPDF(RemoteWebDriver driver, string nomeTeste, string cenario)
         {
             _driver = driver;
             document = new Document();
@@ -35,7 +35,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
             CriarPastaEvidenciaNoPDF(nomeTeste);
             gerar(nomeTeste);
             addExternalImage();
-            addFormatedText("Cenário: "+nomeTeste, FontFactory.HELVETICA, 20, Font.BOLDITALIC,
+            addFormatedText("Cenário: "+cenario, FontFactory.HELVETICA, 20, Font.BOLDITALIC,
                     BaseColor.BLUE, Element.ALIGN_CENTER);
             textoInicial();
             document.NewPage();
@@ -86,7 +86,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
                 document.NewPage();
                 contador = 0;
             }
-            addText("Passo C Sharp");
+            addText(passo);
             insertPrint();
             contador++;
         }
@@ -99,7 +99,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
             }
             catch (DocumentException ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Erro lancado no metodo addText: " + ex.Message);
             }
         }
 
@@ -114,7 +114,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
             }
             catch (DocumentException ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Erro lancado no metodo addFormatedText: " + ex.Message);
             }
         }
 
@@ -142,7 +142,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Erro lancaso no metodo addException: " + e.Message);
             }
         }
 
@@ -181,9 +181,9 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
             File.Move(arqEvidencia, novoNome);
         }
 
-        public void evidenciaElemento()
+        public void evidenciaElemento(string passo)
         {
-            print("Passos");
+            print(passo);
         }
 
         public void CriarPastaEvidenciaNoPDF(string nomeDaPastaEvidencia)
@@ -221,7 +221,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro lancado no metodo CriarPastaEvidenciaNoPDF(): " + e.Message);
+                Console.WriteLine("Erro lancado no metodo CriarPastaEvidenciaNoPDF: " + e.Message);
             }
         }
 
@@ -234,15 +234,15 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
 
         public string PegarDataFormatada()
         {
-            string sDataAtual = System.DateTime.Now.ToString("MM-dd-yy");
-            Console.WriteLine("Data e Hora formatada: " + sDataAtual);
+            string sDataAtual = System.DateTime.Now.ToString("dd-MM-yy");
+            Console.WriteLine("Data formatada: " + sDataAtual);
             return sDataAtual;
         }
 
         public string PegarHoraFormatada()
         {
             string sHoraAtual = System.DateTime.Now.ToString("H-mm-ss");
-            Console.WriteLine("Data e Hora formatada: " + sHoraAtual);
+            Console.WriteLine("Hora formatada: " + sHoraAtual);
             return sHoraAtual;
         }
     }
