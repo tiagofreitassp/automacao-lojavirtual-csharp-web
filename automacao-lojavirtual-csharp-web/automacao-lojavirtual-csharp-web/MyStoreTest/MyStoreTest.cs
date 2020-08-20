@@ -35,9 +35,7 @@ namespace automacao_lojavirtual_chsarp_web_MyStoreTest
         [TearDown]
         public void TearDown()
         {
-            myStoreGeradorPDF = new MyStoreGeradorPDF();
             FecharDriverWeb();
-            myStoreGeradorPDF.CriarDocumentoDeEvidenciasEmPDF();
         }
     }
 }

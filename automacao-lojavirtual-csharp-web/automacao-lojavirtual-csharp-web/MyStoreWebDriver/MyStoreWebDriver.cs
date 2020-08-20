@@ -57,6 +57,10 @@ namespace automacao_lojavirtual_csharp_web_MyStoreWebDriver
             }
         }
 
+        public RemoteWebDriver getCurrentRunningDriver()
+        {
+            return driver;
+        }
         public void DadosNavegador()
         {
             driver.Manage().Window.Maximize();

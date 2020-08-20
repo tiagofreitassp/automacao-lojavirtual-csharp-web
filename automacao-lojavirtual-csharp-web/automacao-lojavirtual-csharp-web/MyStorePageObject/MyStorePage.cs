@@ -23,7 +23,7 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             myStoreVariables = new MyStoreVariables(_driver);
             myStoreUtils = new MyStoreUtils(_driver);
             myStoreGeradorEvidencias = new MyStoreGeradorEvidencias(_driver);
-            myStoreGeradorPDF = new MyStoreGeradorPDF();
+            myStoreGeradorPDF = new MyStoreGeradorPDF(_driver,"Evidencias MyStore Web");
         }
 
         public void Autenticacao(string email, string senha)
@@ -35,9 +35,11 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
                 myStoreUtils.Clicar(myStoreVariables.LblSignIn);
                 myStoreUtils.EscreverNoElemento(myStoreVariables.CampoEmailAddress, email);
                 myStoreUtils.EscreverNoElemento(myStoreVariables.CampoPassword, senha);
-                myStoreGeradorEvidencias.GerarScreenshot("A_Autenticacao_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorEvidencias.GerarScreenshot("A_Autenticacao");
+                myStoreGeradorPDF.evidenciaElemento();
                 myStoreUtils.Clicar(myStoreVariables.BtnSignIn);
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtMyAccount);
+                myStoreGeradorPDF.evidenciaElemento();
             }
             catch (Exception e)
             {
@@ -50,10 +52,12 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 myStoreUtils.Clicar(myStoreVariables.LblSignOut);
-                myStoreGeradorEvidencias.GerarScreenshot("W_Deslogar_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("W_Deslogar");
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.CampoEmailAddress);
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.CampoPassword);
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.BtnSignIn);
+                myStoreGeradorPDF.finishPdf();
             }
             catch (Exception e)
             {
@@ -79,9 +83,12 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 myStoreUtils.Clicar(myStoreVariables.LblWomen);
-                myStoreGeradorEvidencias.GerarScreenshot("B_EscolherProduto_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("B_EscolherProduto");
                 myStoreUtils.MoverParaElemento(myStoreVariables.ImgPrintedDress);
+                myStoreGeradorPDF.evidenciaElemento();
                 myStoreUtils.Clicar(myStoreVariables.ImgPrintedDress);
+                myStoreGeradorPDF.evidenciaElemento();
                 Thread.Sleep(2);
             }
             catch (Exception e)
@@ -96,7 +103,8 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             {
                 myStoreUtils.AlterarParaIframe(myStoreVariables.IframePrintedDress);
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtPrintedDress);
-                myStoreGeradorEvidencias.GerarScreenshot("C_AddToCart_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("C_AddToCart");
                 myStoreUtils.Clicar(myStoreVariables.BtnAddToCart);
                 myStoreUtils.SairDoIframe();
             }
@@ -111,7 +119,8 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 Thread.Sleep(2);
-                myStoreGeradorEvidencias.GerarScreenshot("D_ProductSuccessfullyAddedToYourShoppingCart_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("D_ProductSuccessfullyAddedToYourShoppingCart");
                 myStoreUtils.Clicar(myStoreVariables.BtnProceedToCheckout);
             }
             catch (Exception e)
@@ -125,9 +134,11 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 Thread.Sleep(2);
+                myStoreGeradorPDF.evidenciaElemento();
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtShoppingCartSummary);
                 myStoreUtils.ScrollDown(450);
-                myStoreGeradorEvidencias.GerarScreenshot("E_ShoppingCartSummary_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("E_ShoppingCartSummary");
                 myStoreUtils.Clicar(myStoreVariables.BtnShoppingCartSummary_ProceedToCheckout);
             }
             catch (Exception e)
@@ -141,9 +152,11 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 Thread.Sleep(2);
+                myStoreGeradorPDF.evidenciaElemento();
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtAdresses);
                 myStoreUtils.ScrollDown(450);
-                myStoreGeradorEvidencias.GerarScreenshot("F_Adresses_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("F_Adresses");
                 myStoreUtils.Clicar(myStoreVariables.BtnAdresses_ProceedToCheckout);
             }
             catch (Exception e)
@@ -157,9 +170,11 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 Thread.Sleep(2);
+                myStoreGeradorPDF.evidenciaElemento();
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtShipping);
                 myStoreUtils.Clicar(myStoreVariables.CheckboxIAgreeToTheTermOfService);
-                myStoreGeradorEvidencias.GerarScreenshot("G_Shipping_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("G_Shipping");
                 myStoreUtils.Clicar(myStoreVariables.BtnShipping_ProceedToCheckout);
             }
             catch (Exception e)
@@ -173,9 +188,11 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 Thread.Sleep(2);
+                myStoreGeradorPDF.evidenciaElemento();
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtPleaseChooseYourPaymentMethod);
                 myStoreUtils.ScrollDown(450);
-                myStoreGeradorEvidencias.GerarScreenshot("H_PleaseChooseYourPaymentMethod_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("H_PleaseChooseYourPaymentMethod");
                 myStoreUtils.Clicar(myStoreVariables.BtnPayByBankWire);
             }
             catch (Exception e)
@@ -189,7 +206,8 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 Thread.Sleep(2);
-                myStoreGeradorEvidencias.GerarScreenshot("I_OrderSummary_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("I_OrderSummary");
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtOrderSummary);
                 myStoreUtils.Clicar(myStoreVariables.BtnIConfirmMyOrder);
             }
@@ -204,7 +222,8 @@ namespace automacao_lojavirtual_csharp_web_MyStorePageObject
             try
             {
                 Thread.Sleep(2);
-                myStoreGeradorEvidencias.GerarScreenshot("J_OrderConfirmation_" + myStoreGeradorEvidencias.GerarDataHoraFormatada());
+                myStoreGeradorPDF.evidenciaElemento();
+                myStoreGeradorEvidencias.GerarScreenshot("J_OrderConfirmation");
                 myStoreUtils.VerificarElementoVisivel(myStoreVariables.TxtOrderConfirmation);
                 myStoreUtils.ValidarTextoDoElemento(myStoreVariables.TxtYourOrderOnMyStoreIsComplete, "Your order on My Store is complete.");
             }
