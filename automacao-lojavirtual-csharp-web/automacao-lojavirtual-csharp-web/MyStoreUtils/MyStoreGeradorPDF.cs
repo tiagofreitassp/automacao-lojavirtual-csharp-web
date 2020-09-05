@@ -154,7 +154,7 @@ namespace automacao_lojavirtual_csharp_web_MyStoreUtils_MyStoreGeradorPDF
 
             addText("Data atual: "+PegarDataFormatada());
             addText("Hora atual: "+PegarHoraFormatada());
-            addText("Endereço IP: "+"000.000.0.0");
+            addText("Endereço IP: "+"000.000.00.0");
             addText("Usuário Atual ou de Rede: "+nomeDoUsuario);
             addText("Nome do computador de execução: "+nomeDaMaquina);
             document.NewPage();
