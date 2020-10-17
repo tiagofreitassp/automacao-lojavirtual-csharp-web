@@ -42,7 +42,7 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.7.0, )"
+              "version": "[16.7.1, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
@@ -58,11 +58,11 @@
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[84.0.4147.3001, )"
+              "version": "[86.0.4240.2200, )"
             },
             "iTextSharp": {
               "target": "Package",
-              "version": "[5.5.13.1, )"
+              "version": "[5.5.13.2, )"
             },
             "nunit": {
               "target": "Package",
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     }

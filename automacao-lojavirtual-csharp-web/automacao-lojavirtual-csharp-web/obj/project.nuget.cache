@@ -1,19 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "BvuWTwK+D4dyO+PgNyiCVbpKHwWiOWqnw9a4S47CQI5ODXjQXa79tWnfZ4DwV5jWbH3oa/jYfeU0A9sxpXUs0A==",
+  "dgSpecHash": "dUWovP5uKv/r0gOYVfkYN8KDvmjoIhyNBV76H/6Y3kwE574xRlYWB/5oNG7jSBP7izBwwv7O1kQTijyfvJH8sw==",
   "success": true,
   "projectFilePath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj",
   "expectedPackageFiles": [
+    "/Users/tiago.freitas/.nuget/packages/bouncycastle/1.8.6.1/bouncycastle.1.8.6.1.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/dotnetseleniumextras.waithelpers/3.11.0/dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/itextsharp/5.5.13.1/itextsharp.5.5.13.1.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/microsoft.codecoverage/16.7.0/microsoft.codecoverage.16.7.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/itextsharp/5.5.13.2/itextsharp.5.5.13.2.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/microsoft.codecoverage/16.7.1/microsoft.codecoverage.16.7.1.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.dotnet.internalabstractions/1.0.0/microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/microsoft.net.test.sdk/16.7.0/microsoft.net.test.sdk.16.7.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/microsoft.net.test.sdk/16.7.1/microsoft.net.test.sdk.16.7.1.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/microsoft.testplatform.objectmodel/16.7.0/microsoft.testplatform.objectmodel.16.7.0.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/microsoft.testplatform.testhost/16.7.0/microsoft.testplatform.testhost.16.7.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/microsoft.testplatform.objectmodel/16.7.1/microsoft.testplatform.objectmodel.16.7.1.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/microsoft.testplatform.testhost/16.7.1/microsoft.testplatform.testhost.16.7.1.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.win32.registry/4.3.0/microsoft.win32.registry.4.3.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
@@ -24,7 +25,7 @@
     "/Users/tiago.freitas/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/selenium.support/3.141.0/selenium.support.3.141.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/selenium.webdriver/3.141.0/selenium.webdriver.3.141.0.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/selenium.webdriver.chromedriver/84.0.4147.3001/selenium.webdriver.chromedriver.84.0.4147.3001.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/selenium.webdriver.chromedriver/86.0.4240.2200/selenium.webdriver.chromedriver.86.0.4240.2200.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/system.appcontext/4.1.0/system.appcontext.4.1.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/system.collections.nongeneric/4.3.0/system.collections.nongeneric.4.3.0.nupkg.sha512",
@@ -77,7 +78,17 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'iTextSharp 5.5.13.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'BouncyCastle 1.8.6.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'iTextSharp 5.5.13.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "iTextSharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
