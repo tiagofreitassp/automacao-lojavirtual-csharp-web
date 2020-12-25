@@ -16,6 +16,13 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="automacao-lojavirtual-csharp-web" expanded="True">
+            <Node name="automacao-lojavirtual-csharp-web" selected="True" />
+          </Node>
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.automacao-lojavirtual-csharp-web PreferredExecutionTarget="MonoDevelop.Default" />
