@@ -15,7 +15,7 @@
           "Selenium.WebDriver": "3.141.0",
           "Selenium.WebDriver.ChromeDriver": "87.0.4280.8800",
           "iTextSharp": "5.5.13.2",
-          "NUnit": "3.12.0"
+          "NUnit": "3.13.0"
         },
         "runtime": {
           "automacao-lojavirtual-csharp-web.dll": {}
@@ -401,14 +401,14 @@
           }
         }
       },
-      "NUnit/3.12.0": {
+      "NUnit/3.13.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/nunit.framework.dll": {
-            "assemblyVersion": "3.12.0.0",
-            "fileVersion": "3.12.0.0"
+            "assemblyVersion": "3.13.0.0",
+            "fileVersion": "3.13.0.0"
           }
         }
       },
@@ -1015,12 +1015,12 @@
       "path": "nuget.frameworks/5.0.0",
       "hashPath": "nuget.frameworks.5.0.0.nupkg.sha512"
     },
-    "NUnit/3.12.0": {
+    "NUnit/3.13.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
-      "path": "nunit/3.12.0",
-      "hashPath": "nunit.3.12.0.nupkg.sha512"
+      "sha512": "sha512-G+BOONgJKtNtprjGQ54l0m+Vq2VFCMh/H6ljuHfqrRlX6YkNy0GjMd5Nn0NpJidGpRd4gAOJsBqNuxr7Kgc/5g==",
+      "path": "nunit/3.13.0",
+      "hashPath": "nunit.3.13.0.nupkg.sha512"
     },
     "NUnit3TestAdapter/3.17.0": {
       "type": "package",

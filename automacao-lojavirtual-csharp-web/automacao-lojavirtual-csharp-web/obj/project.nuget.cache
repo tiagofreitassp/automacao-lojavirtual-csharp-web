@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DhWzv0OVdYcu19EGkFqpFVXZ9anGdo6vT82aO7CwYQBUfE4nzsuKORPIlFNMKTirZ2WFZbaXLkh9wkZna+4LDg==",
+  "dgSpecHash": "6wW6pIY/AbhB4OdxbaSCy7u/asJ/tTpDLAiOZNxzSany4iH3KkAQeyTlibPBW4e28+8dgKaG9z32CshOpuE9Qw==",
   "success": true,
   "projectFilePath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,7 @@
     "/Users/tiago.freitas/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/newtonsoft.json/10.0.3/newtonsoft.json.10.0.3.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/nuget.frameworks/5.0.0/nuget.frameworks.5.0.0.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/nunit/3.12.0/nunit.3.12.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/nunit/3.13.0/nunit.3.13.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/nunit3testadapter/3.17.0/nunit3testadapter.3.17.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/selenium.support/3.141.0/selenium.support.3.141.0.nupkg.sha512",
