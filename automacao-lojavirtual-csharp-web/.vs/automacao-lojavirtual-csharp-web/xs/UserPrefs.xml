@@ -6,9 +6,7 @@
           <Node name="automacao-lojavirtual-csharp-web" expanded="True">
             <Node name="automacao-lojavirtual-csharp-web" expanded="True">
               <Node name="MyStorePageObject" expanded="True" />
-              <Node name="MyStoreTest" expanded="True">
-                <Node name="MyStoreTest.cs" selected="True" />
-              </Node>
+              <Node name="MyStoreTest" expanded="True" selected="True" />
               <Node name="MyStoreUtils" expanded="True" />
               <Node name="MyStoreVariabels" expanded="True" />
               <Node name="MyStoreWebDriver" expanded="True" />
@@ -18,9 +16,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="automacao-lojavirtual-csharp-web" expanded="True">
-            <Node name="automacao-lojavirtual-csharp-web" selected="True" />
-          </Node>
+          <Node name="automacao-lojavirtual-csharp-web" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

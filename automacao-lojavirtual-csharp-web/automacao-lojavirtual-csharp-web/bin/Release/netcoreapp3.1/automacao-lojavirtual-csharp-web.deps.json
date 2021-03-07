@@ -9,13 +9,13 @@
       "automacao-lojavirtual-csharp-web/1.0.0": {
         "dependencies": {
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
-          "Microsoft.NET.Test.Sdk": "16.8.3",
+          "Microsoft.NET.Test.Sdk": "16.9.1",
           "NUnit3TestAdapter": "3.17.0",
           "Selenium.Support": "3.141.0",
           "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "87.0.4280.8800",
+          "Selenium.WebDriver.ChromeDriver": "89.0.4389.2300",
           "iTextSharp": "5.5.13.2",
-          "NUnit": "3.13.0"
+          "NUnit": "3.13.1"
         },
         "runtime": {
           "automacao-lojavirtual-csharp-web.dll": {}
@@ -51,11 +51,11 @@
           }
         }
       },
-      "Microsoft.CodeCoverage/16.8.3": {
+      "Microsoft.CodeCoverage/16.9.1": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "16.0.30411.27"
+            "fileVersion": "16.900.21.11904"
           }
         }
       },
@@ -97,19 +97,18 @@
           }
         }
       },
-      "Microsoft.NET.Test.Sdk/16.8.3": {
+      "Microsoft.NET.Test.Sdk/16.9.1": {
         "dependencies": {
-          "Microsoft.CodeCoverage": "16.8.3",
-          "Microsoft.TestPlatform.TestHost": "16.8.3"
+          "Microsoft.CodeCoverage": "16.9.1",
+          "Microsoft.TestPlatform.TestHost": "16.9.1"
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.TestPlatform.ObjectModel/16.8.3": {
+      "Microsoft.TestPlatform.ObjectModel/16.9.1": {
         "dependencies": {
           "NuGet.Frameworks": "5.0.0",
-          "System.Reflection.Metadata": "1.6.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+          "System.Reflection.Metadata": "1.6.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.TestPlatform.CoreUtilities.dll": {
@@ -206,9 +205,9 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/16.8.3": {
+      "Microsoft.TestPlatform.TestHost/16.9.1": {
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "16.8.3",
+          "Microsoft.TestPlatform.ObjectModel": "16.9.1",
           "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
@@ -401,14 +400,14 @@
           }
         }
       },
-      "NUnit/3.13.0": {
+      "NUnit/3.13.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/nunit.framework.dll": {
-            "assemblyVersion": "3.13.0.0",
-            "fileVersion": "3.13.0.0"
+            "assemblyVersion": "3.13.1.0",
+            "fileVersion": "3.13.1.0"
           }
         }
       },
@@ -453,7 +452,7 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/87.0.4280.8800": {},
+      "Selenium.WebDriver.ChromeDriver/89.0.4389.2300": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -924,12 +923,12 @@
       "path": "itextsharp/5.5.13.2",
       "hashPath": "itextsharp.5.5.13.2.nupkg.sha512"
     },
-    "Microsoft.CodeCoverage/16.8.3": {
+    "Microsoft.CodeCoverage/16.9.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pFZAEvmIEkEIKl6WD1wCZ2qkc3f6PLdc2kAjCsUJfaMxVtgq3qxcQd4eZq+ZMt9eSX12VfxtFav2vPy1yiu8bw==",
-      "path": "microsoft.codecoverage/16.8.3",
-      "hashPath": "microsoft.codecoverage.16.8.3.nupkg.sha512"
+      "sha512": "sha512-OEIMvld3rabmyc1L4VvHWOMTEOYrGLbgoVxwAaD8RwX8GT3a1Aal7QpJXLV22f47LpMhSz0uOBerKAd8eI9wNA==",
+      "path": "microsoft.codecoverage/16.9.1",
+      "hashPath": "microsoft.codecoverage.16.9.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -945,12 +944,12 @@
       "path": "microsoft.dotnet.internalabstractions/1.0.0",
       "hashPath": "microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512"
     },
-    "Microsoft.NET.Test.Sdk/16.8.3": {
+    "Microsoft.NET.Test.Sdk/16.9.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-E2hDEEHIUmDpGm0LIjVenWhXWWd5lWylzuujz0iPwwxPYUA2Ua6jrxfMNdoKombDSk9hpDDA0M3xnFz6TLh/KQ==",
-      "path": "microsoft.net.test.sdk/16.8.3",
-      "hashPath": "microsoft.net.test.sdk.16.8.3.nupkg.sha512"
+      "sha512": "sha512-9acz3fExifstaoKTAvHVwRGMFrtb1QLlT6KfxOFTYM4dksuzwpkApjt0xP+yJcuRsPcf14F1b0Du3GgfKZWHJw==",
+      "path": "microsoft.net.test.sdk/16.9.1",
+      "hashPath": "microsoft.net.test.sdk.16.9.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -966,19 +965,19 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.ObjectModel/16.8.3": {
+    "Microsoft.TestPlatform.ObjectModel/16.9.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dqHiRggyAbkjQO9926SzM11Pn0nKjH1wwM6ee3E9//y1WZsUgTSVCMS14qvlQlk9iUZJyj+iz3/1zplE4Ll+hw==",
-      "path": "microsoft.testplatform.objectmodel/16.8.3",
-      "hashPath": "microsoft.testplatform.objectmodel.16.8.3.nupkg.sha512"
+      "sha512": "sha512-UuS6HBi6pVJDGS5pmf6Mi38oSQVQ4vE5AOmNJzA5WgOUlFmvg9fTq9KCSd5o+UPSVH420t9wthj2Q0M9Yfb+HA==",
+      "path": "microsoft.testplatform.objectmodel/16.9.1",
+      "hashPath": "microsoft.testplatform.objectmodel.16.9.1.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.TestHost/16.8.3": {
+    "Microsoft.TestPlatform.TestHost/16.9.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lF3QPoq7NYs7Xr/j5a44jJvHakRQq5lKyjG9adGNqeN28JmhD2qEogzGOL4GVkofqX1FmmbyUali2jlSVval8A==",
-      "path": "microsoft.testplatform.testhost/16.8.3",
-      "hashPath": "microsoft.testplatform.testhost.16.8.3.nupkg.sha512"
+      "sha512": "sha512-j/lZDlkuoUJ+lRJXOXLJpwUGXmko5/woAPo/hN6QhFRo0J5wscQPoPJ1isvXpB4Iw7x7A3jYllxR5QjV3cMlRw==",
+      "path": "microsoft.testplatform.testhost/16.9.1",
+      "hashPath": "microsoft.testplatform.testhost.16.9.1.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
@@ -1015,12 +1014,12 @@
       "path": "nuget.frameworks/5.0.0",
       "hashPath": "nuget.frameworks.5.0.0.nupkg.sha512"
     },
-    "NUnit/3.13.0": {
+    "NUnit/3.13.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-G+BOONgJKtNtprjGQ54l0m+Vq2VFCMh/H6ljuHfqrRlX6YkNy0GjMd5Nn0NpJidGpRd4gAOJsBqNuxr7Kgc/5g==",
-      "path": "nunit/3.13.0",
-      "hashPath": "nunit.3.13.0.nupkg.sha512"
+      "sha512": "sha512-vWBvrSelmTYwqHWvO3dA63z7cOpaFR/3nJ9MMVLBkWeaWa7oiglPPm5g1h96B4i2XXqjFexxhR5MyMjmIJYPfg==",
+      "path": "nunit/3.13.1",
+      "hashPath": "nunit.3.13.1.nupkg.sha512"
     },
     "NUnit3TestAdapter/3.17.0": {
       "type": "package",
@@ -1050,12 +1049,12 @@
       "path": "selenium.webdriver/3.141.0",
       "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/87.0.4280.8800": {
+    "Selenium.WebDriver.ChromeDriver/89.0.4389.2300": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7bgZ2QNhYFofxDdlGVfUVgNJ6B785u/UeoFjEzB7O2EiggPitosPqqB/TG0KpJwvqgQTs+nNJus3rn9yNMHa1A==",
-      "path": "selenium.webdriver.chromedriver/87.0.4280.8800",
-      "hashPath": "selenium.webdriver.chromedriver.87.0.4280.8800.nupkg.sha512"
+      "sha512": "sha512-/lnt6U3hogvJtFBP9l9Vm3F7zVBTClCANeVzcyWwyUf/uW686KEgGU+9x6sebstjd02qrmvcP42MKHTID1tq/A==",
+      "path": "selenium.webdriver.chromedriver/89.0.4389.2300",
+      "hashPath": "selenium.webdriver.chromedriver.89.0.4389.2300.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
