@@ -166,17 +166,19 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
 
             Console.WriteLine("STATUS DO TESTE: " + status);
 
-            if (status.Equals("FAILED"))
+            if (status.Equals("FAILED") || status.Equals("__FAILED"))
             {
                 cor = BaseColor.RED;
+                status = "__FAILED";
                 resultado = "__FAILED";
             }
             else
             {
+                status = "__PASSED";
                 resultado = "__PASSED";
             }
 
-            addFormatedText("STATUS DO CENARIO: " + resultado, FontFactory.TIMES_BOLDITALIC, 16f, 1, cor);
+            addFormatedText("STATUS DO CENARIO: " + status, FontFactory.TIMES_BOLDITALIC, 16f, 1, cor);
             document.Close();
             novoNome = pastaDeEvidencias.Replace(".pdf", resultado + ".pdf");
             //return new File(arqEvidencia).Replace(new File(novoNome));

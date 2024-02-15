@@ -1,18 +1,15 @@
 ﻿<Properties StartupConfiguration="{B33F3E89-4B4C-48DD-B81D-28D444C30F23}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="automacao-lojavirtual-csharp-web/MyStoreTest/MyStoreTest.cs">
-    <Files>
-      <File FileName="automacao-lojavirtual-csharp-web/MyStoreTest/MyStoreTest.cs" Line="25" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="automacao-lojavirtual-csharp-web">
+          <Node name="automacao-lojavirtual-csharp-web" expanded="True">
             <Node name="automacao-lojavirtual-csharp-web">
               <Node name="MyStorePageObject" expanded="True" />
-              <Node name="MyStoreTest" expanded="True">
-                <Node name="MyStoreTest.cs" selected="True" />
+              <Node name="MyStoreTest" expanded="True" />
+              <Node name="MyStoreUtils" expanded="True">
+                <Node name="MyStoreGeradorPDF.cs" selected="True" />
               </Node>
-              <Node name="MyStoreUtils" expanded="True" />
               <Node name="MyStoreVariabels" expanded="True" />
               <Node name="MyStoreWebDriver" expanded="True" />
             </Node>
@@ -20,13 +17,7 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="automacao-lojavirtual-csharp-web" selected="True">
-            <Node name="automacao-lojavirtual-csharp-web" expanded="True">
-              <Node name="automacao_lojavirtual_csharp_web.MyStoreTest" expanded="True" />
-            </Node>
-          </Node>
-        </State>
+        <State name="__root__" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

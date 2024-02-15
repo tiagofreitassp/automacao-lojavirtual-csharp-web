@@ -59,6 +59,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Autenticacao: " + e.Message);
             }
         }
@@ -75,9 +76,12 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
                 util.VerificarElementoVisivel(By.Id(var.CampoEmailAddress));
                 util.VerificarElementoVisivel(By.Id(var.CampoPassword));
                 util.VerificarElementoVisivel(By.Id(var.BtnSignIn));
+
+                evidenciaPDF.setStatus("__PASSED");
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Deslogar: " + e.Message);
             }
         }
@@ -114,6 +118,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Escolher Produto: " + e.Message);
             }
         }
@@ -136,6 +141,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa1_AddToCart: " + e.Message);
             }
         }
@@ -151,6 +157,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa2_ProductSuccessfullyAddedToYourShoppingCart: " + e.Message);
             }
         }
@@ -171,6 +178,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa3_ShoppingCartSummary: " + e.Message);
             }
         }
@@ -199,6 +207,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa4_Adresses: " + e.Message);
             }
         }
@@ -221,6 +230,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa5_Shipping: " + e.Message);
             }
         }
@@ -241,6 +251,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa6_PleaseChooseYourPaymentMethod: " + e.Message);
             }
         }
@@ -257,6 +268,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa7_OrderSummary: " + e.Message);
             }
         }
@@ -273,6 +285,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa8_OrderConfirmation: " + e.Message);
             }
         }
@@ -304,6 +317,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             }
             catch (Exception e)
             {
+                evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Preencher_Adresses: " + e.Message);
             }
         }
