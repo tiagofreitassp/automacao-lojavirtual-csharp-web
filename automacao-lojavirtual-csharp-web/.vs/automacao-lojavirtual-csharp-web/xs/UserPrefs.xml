@@ -10,7 +10,9 @@
         <State name="__root__">
           <Node name="automacao-lojavirtual-csharp-web">
             <Node name="automacao-lojavirtual-csharp-web">
-              <Node name="UnitTest1.cs" selected="True" />
+              <Node name="MyStorePageObject" expanded="True" />
+              <Node name="MyStoreUtils" expanded="True" />
+              <Node name="MyStoreWebDriver" expanded="True" />
             </Node>
           </Node>
         </State>
