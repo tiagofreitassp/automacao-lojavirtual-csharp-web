@@ -26,6 +26,7 @@ namespace automacao_lojavirtual_csharp_web.MyStoreTest
         [TearDown]
         public void TearDown()
         {
+            page.FinishPdf();
             FecharDriverWeb();
         }
     }

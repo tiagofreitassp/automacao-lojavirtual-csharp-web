@@ -272,4 +272,3 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
         }
     }
 }
-

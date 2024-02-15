@@ -10,23 +10,52 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
         public IWebDriver _driver;
         public MyStoreUtils.MyStoreUtils util;
         public MyStoreVariables var;
+        public MyStoreGeradorPDF evidenciaPDF;
+        public MyStoreGeradorEvidencias evidenciaDoc;
 
         public MyStorePage(IWebDriver driver)
         {
             _driver = driver;
             util = new MyStoreUtils.MyStoreUtils(_driver);
             var = new MyStoreVariables();
+            evidenciaPDF = new MyStoreGeradorPDF(_driver, "Evidencias MyStore Web_" + util.GerarDataHoraFormatada(), "Realizar compra online");
+            evidenciaDoc = new MyStoreGeradorEvidencias(_driver);
         }
-        
+
+        public void SetStatus(string status)
+        {
+            evidenciaPDF.setStatus(status);
+        }
+
+        public void FinishPdf()
+        {
+            try
+            {
+                evidenciaPDF.finishPdf();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro lancado no metodo FinishPdf: " + e.Message);
+            }
+        }
+
         public void Autenticacao(string email, string senha)
         {
             try
             {
+                //evidenciaDoc.CriarPastaEvidencia("Evidencias MyStore_" + evidenciaDoc.GerarDataHoraFormatada());
+
                 util.Clicar(By.ClassName(var.LblSignIn));
                 util.Escrever(By.Name(var.CampoEmailAddress),email);
                 util.Escrever(By.Name(var.CampoPassword),senha);
+
+                //evidenciaDoc.GerarScreenshot("A_Autenticacao");
+                evidenciaPDF.evidenciaElemento("Realizando autenticacao");
+
                 util.Clicar(By.Id(var.BtnSignIn));
                 util.VerificarElementoVisivel(By.XPath(var.TxtMyAccount));
+
+                evidenciaPDF.evidenciaElemento("Validando tela inicial");
             }
             catch (Exception e)
             {
@@ -39,6 +68,10 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             try
             {
                 util.Clicar(By.ClassName(var.LblSignOut));
+
+                evidenciaPDF.evidenciaElemento("Realizando o logout");
+                //evidenciaDoc.GerarScreenshot("W_Deslogar");
+
                 util.VerificarElementoVisivel(By.Id(var.CampoEmailAddress));
                 util.VerificarElementoVisivel(By.Id(var.CampoPassword));
                 util.VerificarElementoVisivel(By.Id(var.BtnSignIn));
@@ -67,8 +100,17 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             try
             {
                 util.Clicar(By.LinkText(var.LblWomen));
+
+                evidenciaPDF.evidenciaElemento("Clicar no produto");
+                //evidenciaDoc.GerarScreenshot("B_EscolherProduto");
+
                 util.MoverParaElemento(By.XPath(var.ImgPrintedDress));
+
+                evidenciaPDF.evidenciaElemento("Clicar para visualizar o produto");
+
                 util.Clicar(By.XPath(var.ImgPrintedDress));
+
+                evidenciaPDF.evidenciaElemento("Validando descricao do produto");
             }
             catch (Exception e)
             {
@@ -80,9 +122,14 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
         {
             try
             {
+                //myStoreUtils.AlterarParaIframe(myStoreVariables.IframePrintedDress);
+
                 util.VerificarElementoVisivel(By.XPath(var.TxtPrintedDress));
 
                 VerificarSeProdutoEstaForaDeEstoque();
+
+                evidenciaPDF.evidenciaElemento("Clicar no botao AddToCart");
+                //evidenciaDoc.GerarScreenshot("C_AddToCart");
 
                 util.Clicar(By.Id(var.BtnAddToCart));
                 //util.SairDoIframe();
@@ -97,6 +144,9 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
         {
             try
             {
+                evidenciaPDF.evidenciaElemento("Clicar no botao ProceedToCheckout");
+                //evidenciaDoc.GerarScreenshot("D_ProductSuccessfullyAddedToYourShoppingCart");
+
                 util.Clicar(By.XPath(var.BtnProceedToCheckout));
             }
             catch (Exception e)
@@ -109,8 +159,14 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
         {
             try
             {
+                evidenciaPDF.evidenciaElemento("Validando compra na tela Summary");
+
                 util.VerificarElementoVisivel(By.Id(var.TxtShoppingCartSummary));
                 util.ScrollDown(450);
+
+                evidenciaPDF.evidenciaElemento("Clicar no botao ProceedToCheckout");
+                //evidenciaDoc.GerarScreenshot("E_ShoppingCartSummary");
+
                 util.Clicar(By.XPath(var.BtnShoppingCartSummary_ProceedToCheckout));
             }
             catch (Exception e)
@@ -125,6 +181,8 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 Thread.Sleep(3);
 
+                evidenciaPDF.evidenciaElemento("Validando Adresses");
+
                 if (util.ElementoExibido(By.XPath(var.TxtYourAdresses)))
                 {
                     Preencher_Adresses();
@@ -132,6 +190,11 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
 
                 util.ElementoExibido(By.ClassName(var.TxtAdresses));
                 util.ScrollDown(450);
+
+                //evidenciaDoc.GerarScreenshot("F_Adresses");
+                evidenciaPDF.evidenciaElemento("Clicar no botão ProceedToCheckout");
+
+
                 util.Clicar(By.Name(var.BtnAdresses_ProceedToCheckout));
             }
             catch (Exception e)
@@ -145,8 +208,15 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             try
             {
                 util.SelecionarElemento(By.XPath(var.TxtShipping));
+
+                evidenciaPDF.evidenciaElemento("Clicar no checkbox IAgreeToTheTermOfService");
+
                 util.ScrollDown(150);
                 util.ClicarJS(By.XPath(var.CheckboxIAgreeToTheTermOfService));
+
+                evidenciaPDF.evidenciaElemento("Clicar no botao ProceedToCheckout");
+                //evidenciaDoc.GerarScreenshot("G_Shipping");
+
                 util.Clicar(By.Name(var.BtnShipping_ProceedToCheckout));
             }
             catch (Exception e)
@@ -159,8 +229,14 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
         {
             try
             {
+                evidenciaPDF.evidenciaElemento("Validar tela da escolha do pagamento");
+
                 util.VerificarElementoVisivel(By.ClassName(var.TxtPleaseChooseYourPaymentMethod));
                 util.ScrollDown(450);
+
+                evidenciaPDF.evidenciaElemento("Clicar no botao PayByBankWire");
+                //evidenciaDoc.GerarScreenshot("H_PleaseChooseYourPaymentMethod");
+
                 util.Clicar(By.ClassName(var.BtnPayByBankWire));
             }
             catch (Exception e)
@@ -173,6 +249,9 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
         {
             try
             {
+                evidenciaPDF.evidenciaElemento("Clicar no botao IConfirmMyOrder");
+                //evidenciaDoc.GerarScreenshot("I_OrderSummary");
+
                 util.VerificarElementoVisivel(By.ClassName(var.TxtOrderSummary));
                 util.Clicar(By.XPath(var.BtnIConfirmMyOrder));
             }
@@ -186,6 +265,9 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
         {
             try
             {
+                evidenciaPDF.evidenciaElemento("Validar a confirmacao da orderm de compra");
+                //evidenciaDoc.GerarScreenshot("J_OrderConfirmation");
+
                 util.VerificarElementoVisivel(By.ClassName(var.TxtOrderConfirmation));
                 util.ValidarTextoDoElemento(By.XPath(var.TxtYourOrderOnMyStoreIsComplete), "Your order on My Shop is complete.");
             }
@@ -216,6 +298,9 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
                 util.Escrever(By.Id(var.CampoAdditionalInformation), "Null");
                 util.Clicar(By.Id(var.CampoPleaseAssignAnAddressTitleForFutureReference));
                 util.Clicar(By.Id(var.BtnSave));
+
+                evidenciaPDF.evidenciaElemento("Preencher endereço");
+                //evidenciaDoc.GerarScreenshot("Preencher endereço");
             }
             catch (Exception e)
             {

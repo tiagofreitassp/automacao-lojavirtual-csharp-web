@@ -17,7 +17,7 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
         public DirectoryInfo evidencias;
         public int contador;
         public string arqEvidencia;
-        public string status;
+        public string? status;
         public static string nomeDoUsuario = Environment.UserName;
         public static string downloadsMac = "/Users/" + nomeDoUsuario + "/Downloads/";
         public static string downloadsWindows = "C:/Users/" + nomeDoUsuario + "/Downloads/";
