@@ -1,5 +1,4 @@
 ﻿using System;
-using automacao_lojavirtual_csharp_web.MyStorePageObject;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
@@ -15,7 +14,7 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
         public MyStoreUtils(IWebDriver driver)
         {
             _driver = driver;
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
         }
 
         public void Clicar(By by)
@@ -138,6 +137,11 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
                 Console.WriteLine("Erro ao aguardar se elemento ficara visivel: " + e.Message);
                 throw new Exception(e.StackTrace);
             }
+        }
+
+        public void Aguarde(int s)
+        {
+            Thread.Sleep(s);
         }
 
         public void EsperaImplicita()

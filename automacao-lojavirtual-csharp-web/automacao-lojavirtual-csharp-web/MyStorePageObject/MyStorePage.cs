@@ -81,6 +81,9 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             try
             {
                 util.VerificarElementoVisivel(By.XPath(var.TxtPrintedDress));
+
+                VerificarSeProdutoEstaForaDeEstoque();
+
                 util.Clicar(By.Id(var.BtnAddToCart));
                 //util.SairDoIframe();
             }
@@ -217,6 +220,71 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             catch (Exception e)
             {
                 Console.WriteLine("Erro lancado no metodo Preencher_Adresses: " + e.Message);
+            }
+        }
+
+        public void VerificarSeProdutoEstaForaDeEstoque()
+        {
+            ClicarNaCorAzul();
+            EscolherTamanhoM();
+            EscolherTamanhoL();
+        }
+
+        public void ClicarNaCorAzul()
+        {
+            if (util.ElementoExibido(By.Id(var.TxtThisProductIsNoLongerInStock)))
+            {
+                util.SelecionarElemento(By.Id(var.TxtThisProductIsNoLongerInStock));
+
+                if (util.ElementoExibido(By.Name(var.TxtProductColor_Blue)))
+                {
+                    util.Clicar(By.Name(var.TxtProductColor_Blue));
+                    util.Aguarde(2000);
+                }
+            }
+        }
+
+        public void ClicarNaCorLaranja()
+        {
+            if (util.ElementoExibido(By.Id(var.TxtThisProductIsNoLongerInStock)))
+            {
+                util.SelecionarElemento(By.Id(var.TxtThisProductIsNoLongerInStock));
+
+                if (util.ElementoExibido(By.Name(var.TxtProductColor_Orange)))
+                {
+                    util.Clicar(By.Name(var.TxtProductColor_Orange));
+                    util.Aguarde(2000);
+                }
+            }
+        }
+
+        public void EscolherTamanhoM()
+        {
+            if (util.ElementoExibido(By.Id(var.TxtThisProductIsNoLongerInStock)))
+            {
+                util.SelecionarElemento(By.Id(var.TxtThisProductIsNoLongerInStock));
+                util.Clicar(By.Id(var.SelectSize));
+                util.Clicar(By.XPath(var.OptionSize_M));
+            }
+        }
+
+        public void EscolherTamanhoL()
+        {
+            if (util.ElementoExibido(By.Id(var.TxtThisProductIsNoLongerInStock)))
+            {
+                util.SelecionarElemento(By.Id(var.TxtThisProductIsNoLongerInStock));
+                util.Clicar(By.Id(var.SelectSize));
+                util.Clicar(By.XPath(var.OptionSize_L));
+            }
+        }
+
+        public void EscolherTamanhoS()
+        {
+            if (util.ElementoExibido(By.Id(var.TxtThisProductIsNoLongerInStock)))
+            {
+                util.SelecionarElemento(By.Id(var.TxtThisProductIsNoLongerInStock));
+                util.Clicar(By.Id(var.SelectSize));
+                util.Clicar(By.XPath(var.OptionSize_S));
             }
         }
     }

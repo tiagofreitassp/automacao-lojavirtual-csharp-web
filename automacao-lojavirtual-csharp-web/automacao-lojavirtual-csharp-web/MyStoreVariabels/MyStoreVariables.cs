@@ -55,5 +55,13 @@ namespace automacao_lojavirtual_csharp_web.MyStoreVariabels
         public string TxtPrintedDress = "//h1[contains(text(),'Printed Dress')]";//xPath
         public string TxtState_California = "//option[contains(text(),'California')]";//xPath
         public string TxtYourAdresses = "//h1[contains(text(),'Your addresses')]";//xPath
+        public string TxtThisProductIsNoLongerInStock = "availability_value";//ID
+        public string TxtProductColor_Blue = "Blue";//Name
+        public string TxtProductColor_Orange = "Orange";//Name
+
+        public string SelectSize = "group_1";//ID
+        public string OptionSize_S = "//option[contains(text(),'S')]";//xPath
+        public string OptionSize_M = "//option[contains(text(),'M')]";//xPath
+        public string OptionSize_L = "//option[contains(text(),'L')]";//xPath
     }
 }
