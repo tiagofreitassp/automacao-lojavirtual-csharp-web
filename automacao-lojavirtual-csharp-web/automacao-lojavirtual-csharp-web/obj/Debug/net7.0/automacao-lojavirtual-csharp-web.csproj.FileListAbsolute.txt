@@ -105,3 +105,5 @@
 /Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/obj/Debug/net7.0/automacao-lojavirtual-csharp-web.pdb
 /Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/obj/Debug/net7.0/automacao-lojavirtual-csharp-web.genruntimeconfig.cache
 /Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/obj/Debug/net7.0/ref/automacao-lojavirtual-csharp-web.dll
+/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/bin/Debug/net7.0/BouncyCastle.Crypto.dll
+/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/bin/Debug/net7.0/itextsharp.dll

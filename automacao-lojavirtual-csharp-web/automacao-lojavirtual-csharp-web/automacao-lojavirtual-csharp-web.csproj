@@ -28,4 +28,18 @@
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="MyStorePageObject\" />
+    <None Remove="MyStoreTest\" />
+    <None Remove="MyStoreUtils\" />
+    <None Remove="MyStoreVariabels\" />
+    <None Remove="MyStoreWebDriver\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyStorePageObject\" />
+    <Folder Include="MyStoreTest\" />
+    <Folder Include="MyStoreUtils\" />
+    <Folder Include="MyStoreVariabels\" />
+    <Folder Include="MyStoreWebDriver\" />
+  </ItemGroup>
 </Project>
