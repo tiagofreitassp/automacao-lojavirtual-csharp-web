@@ -6,6 +6,8 @@ namespace automacao_lojavirtual_csharp_web.MyStoreTest
 {
 	public class MyStoreTest : MyStoreWebDriver.MyStoreWebDriver
 	{
+        private MyStorePage? page;
+
         [SetUp]
         public void Setup()
         {
@@ -15,7 +17,10 @@ namespace automacao_lojavirtual_csharp_web.MyStoreTest
         [Test]
         public void TestRealizarCompra()
         {
-            Thread.Sleep(3000);
+            page = new MyStorePage(getCurrentRunningDriver());
+            page.Autenticacao("teste.email.1@mail.com", "abc@12345");
+            page.RealizarCompra();
+            page.Deslogar();
         }
 
         [TearDown]

@@ -9,7 +9,7 @@ namespace automacao_lojavirtual_csharp_web.MyStoreWebDriver
 {
 	public class MyStoreWebDriver
 	{
-		private IWebDriver driver;
+		public IWebDriver driver;
 		private String url = "http://www.automationpractice.pl/index.php";
 
 		public void CriarWebDriver()
@@ -59,7 +59,7 @@ namespace automacao_lojavirtual_csharp_web.MyStoreWebDriver
 
         public void FecharDriverWeb()
         {
-            driver.Quit();
+            driver.Close();
             Console.WriteLine("WebDriver finalizado com sucesso!");
         }
     }
