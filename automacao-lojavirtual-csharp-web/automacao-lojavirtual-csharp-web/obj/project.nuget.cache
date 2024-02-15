@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "I9kiuTWKWOmTAIS2vTXiqN3sUn0cPz6TA+uB1rxf5OYmX9aJR2wUKbPty7dz5oMv1Lugi/Z+p+nFwAgy94cVWA==",
+  "dgSpecHash": "5Z6mYYET8GEwEDXj55FJ8XCbhpYQm1bzxpyxmezHIoY8ygEUZgD1onTQxpDFmKb2QmODO9kc/BbG2KdvRbIF0A==",
   "success": true,
   "projectFilePath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj",
   "expectedPackageFiles": [
     "/Users/tiago.freitas/.nuget/packages/anglesharp/1.0.4/anglesharp.1.0.4.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/bouncycastle/1.8.9/bouncycastle.1.8.9.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/dotnetseleniumextras.waithelpers/3.11.0/dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/itextsharp/5.5.13.3/itextsharp.5.5.13.3.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.codecoverage/17.9.0/microsoft.codecoverage.17.9.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.net.test.sdk/17.9.0/microsoft.net.test.sdk.17.9.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
@@ -28,5 +31,26 @@
     "/Users/tiago.freitas/.nuget/packages/system.text.json/7.0.3/system.text.json.7.0.3.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/webdrivermanager/2.17.1/webdrivermanager.2.17.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'BouncyCastle 1.8.9' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'iTextSharp 5.5.13.3' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "iTextSharp",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
