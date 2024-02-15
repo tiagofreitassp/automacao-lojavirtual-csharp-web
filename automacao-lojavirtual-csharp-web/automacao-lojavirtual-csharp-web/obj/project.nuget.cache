@@ -1,22 +1,31 @@
 {
   "version": 2,
-  "dgSpecHash": "SvYuuOP/2v3/lGlbzMHsC1TMpX5wG4lv/U/FqyUBH7Nxa2dYwiLpfCjUJolN6REFX93MafCzcsUsSQDDACqoGQ==",
+  "dgSpecHash": "eTTnxAYFsu/0eo3IyjPHo6xKFzwxhNoUPIo/yW14NeTNoWE2EG1cOVkPJbwAc2x8SXTc20EUKDj9sCc9uV42Yw==",
   "success": true,
   "projectFilePath": "/Users/tiago.freitas/Documents/GitHub/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web/automacao-lojavirtual-csharp-web.csproj",
   "expectedPackageFiles": [
+    "/Users/tiago.freitas/.nuget/packages/anglesharp/1.0.4/anglesharp.1.0.4.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.testplatform.objectmodel/17.5.0/microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/microsoft.testplatform.testhost/17.5.0/microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
     "/Users/tiago.freitas/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
-    "/Users/tiago.freitas/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/Users/tiago.freitas/.nuget/packages/sharpziplib/1.4.2/sharpziplib.1.4.2.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/system.text.encoding.codepages/7.0.0/system.text.encoding.codepages.7.0.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/system.text.json/7.0.3/system.text.json.7.0.3.nupkg.sha512",
+    "/Users/tiago.freitas/.nuget/packages/webdrivermanager/2.17.1/webdrivermanager.2.17.1.nupkg.sha512"
   ],
   "logs": []
 }
