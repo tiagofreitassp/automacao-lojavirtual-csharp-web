@@ -18,7 +18,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             _driver = driver;
             util = new MyStoreUtils.MyStoreUtils(_driver);
             var = new MyStoreVariables();
-            evidenciaPDF = new MyStoreGeradorPDF(_driver, "Evidencias MyStore Web_" + util.GerarDataHoraFormatada(), "Realizar compra online");
+            evidenciaPDF = new MyStoreGeradorPDF(_driver, "Evidencias MyStore Web_Realizar compra online_" + util.GerarDataHoraFormatada(), "Realizar compra online");
             evidenciaDoc = new MyStoreGeradorEvidencias(_driver);
         }
 
@@ -61,6 +61,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Autenticacao: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -83,6 +84,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Deslogar: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -120,6 +122,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Escolher Produto: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -143,6 +146,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa1_AddToCart: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -159,6 +163,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa2_ProductSuccessfullyAddedToYourShoppingCart: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -180,6 +185,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa3_ShoppingCartSummary: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -209,6 +215,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa4_Adresses: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -232,6 +239,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa5_Shipping: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -253,6 +261,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa6_PleaseChooseYourPaymentMethod: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -270,6 +279,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa7_OrderSummary: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -287,6 +297,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Etapa8_OrderConfirmation: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 
@@ -319,6 +330,7 @@ namespace automacao_lojavirtual_csharp_web.MyStorePageObject
             {
                 evidenciaPDF.setStatus("__FAILED");
                 Console.WriteLine("Erro lancado no metodo Preencher_Adresses: " + e.Message);
+                throw new Exception(e.StackTrace);
             }
         }
 

@@ -49,10 +49,18 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
 
         public void SelecionarElemento(By by)
         {
-            Thread.Sleep(1500);
-            IWebElement elemento = wait.Until(ExpectedConditions.ElementExists(by));
-            IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
-            js.ExecuteScript("arguments[0].style.border=arguments[1]", elemento, "solid 4px red");
+            try
+            {
+                Thread.Sleep(1500);
+                IWebElement elemento = wait.Until(ExpectedConditions.ElementExists(by));
+                IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
+                js.ExecuteScript("arguments[0].style.border=arguments[1]", elemento, "solid 4px red");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erro ao tentar Selecionar o elemento: " + e.Message);
+                throw new Exception(e.StackTrace);
+            }
         }
 
         public void ClicarJS(By by)

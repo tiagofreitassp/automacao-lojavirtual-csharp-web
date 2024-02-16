@@ -162,8 +162,6 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
             String resultado = "Evidencias MyStore_" + PegarDataHoraFormatada();
             String novoNome = "Evidencia com novo nome";
 
-            //bool status = TestContext.CurrentContext.Result.Equals(TestStatus.Failed);
-
             Console.WriteLine("STATUS DO TESTE: " + status);
 
             if (status.Equals("FAILED") || status.Equals("__FAILED"))
@@ -171,18 +169,24 @@ namespace automacao_lojavirtual_csharp_web.MyStoreUtils
                 cor = BaseColor.RED;
                 status = "__FAILED";
                 resultado = "__FAILED";
+                addFormatedText("STATUS DO CENARIO: " + status, FontFactory.TIMES_BOLDITALIC, 16f, 1, cor);
             }
             else
             {
+                cor = BaseColor.GREEN;
                 status = "__PASSED";
                 resultado = "__PASSED";
+                addFormatedText("STATUS DO CENARIO: " + status, FontFactory.TIMES_BOLDITALIC, 16f, 1, cor);
             }
 
-            addFormatedText("STATUS DO CENARIO: " + status, FontFactory.TIMES_BOLDITALIC, 16f, 1, cor);
             document.Close();
-            novoNome = pastaDeEvidencias.Replace(".pdf", resultado + ".pdf");
-            //return new File(arqEvidencia).Replace(new File(novoNome));
-            //File.Move(pastaDeEvidencias, novoNome);
+            novoNome = pastaDeEvidencias.Replace(".pdf", resultado +".pdf");
+
+            /*
+             * É necessário verificar os metodos para renomear o nome da evidencia PDF inserindo o status junto.
+                return new File(arqEvidencia).Replace(new File(novoNome));
+                File.Move(pastaDeEvidencias, novoNome);
+            */
         }
 
         public void evidenciaElemento(string passo)

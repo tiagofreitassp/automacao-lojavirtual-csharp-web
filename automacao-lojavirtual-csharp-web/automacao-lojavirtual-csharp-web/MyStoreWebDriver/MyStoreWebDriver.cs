@@ -14,8 +14,8 @@ namespace automacao_lojavirtual_csharp_web.MyStoreWebDriver
 
 		public void CriarWebDriver()
 		{
-            SetEdge();
-            //SetChrome();
+            //SetEdge();
+            SetChrome();
         }
 
         private void SetEdge()
